@@ -1,15 +1,22 @@
-import React from 'react';
-import { Header } from 'semantic-ui-react';
+import React from 'react'
+import { Header } from 'semantic-ui-react'
 
-import Layout from '../appLayout/Layout';
+import Panel from './Panel'
+import styles from './css/main.css'
+import Layout from '../appLayout/Layout'
 
-const SideBar = () => {
-  return (
-    <Layout>
-      <Header as="h2">Side Bar Page</Header>
-      <p>This page was loaded asynchronously!!!</p>
-    </Layout>
-  );
+class SideBar extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <Header as="h2">Side Bar Page</Header>
+        <div className={styles.sideBarBack}>
+          hey
+          <Panel />
+        </div>
+      </Layout>
+    );
+  }
 };
 
 export default SideBar;
