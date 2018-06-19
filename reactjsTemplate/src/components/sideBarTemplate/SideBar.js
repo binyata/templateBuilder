@@ -11,7 +11,6 @@ class SideBar extends React.Component {
       <Layout>
         <Header as="h2">Side Bar Page</Header>
         <div className={styles.sideBarBack}>
-          hey
           <Panel />
         </div>
       </Layout>

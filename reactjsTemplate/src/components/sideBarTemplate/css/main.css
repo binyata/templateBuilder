@@ -1,6 +1,67 @@
+button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
 .sideBarBack {
-  background-color: black;
-  width: 25%;
-  height: 100%;
-  padding-top: 50%;
+  background-color: #424856;
+  width: 20%;
+}
+
+.sideBarLogo {
+  margin-top: 5%;
+  border-color: #424856;
+  border-width: thick;
+  opacity: 0.3;
+}
+
+.panelButtonGeneral {
+  background-color: #495661;
+  width:100%;
+  height:100%;
+  color: #FFFFFF;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  text-align: center;
+  border: 1px solid #828282;
+}
+
+.panelButtonGeneral:hover {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+}
+/* #495661 panel buttons background color */
+/* #F6F7F7 Text and plus button color */
+/* #5DA1C8 Export Button background color */
+/* #F0F4F7 background color for general page */
+/* #FFFFFF background color for useful info panels */
+
+.panelGeneralInfo {
+  background-color: #424856;
+  color: #FFFFFF;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 8%;
+  border: solid;
+  border-color: #828282;
+  border-width: thin;
+}
+
+.panelPrimaryButton {
+  background-color: #5DA1C8;
+  color: #FFFFFF;
+  border: solid;
+  border-color: #5DA1C8;
+  border-width: thin;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.panelPrimaryButton:hover {
+  background-color: #4CAF50;
+  color: #FFFFFF;
 }

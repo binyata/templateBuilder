@@ -7,6 +7,10 @@ const port = process.env.PORT || 3000;
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  resolve: {
+    extensions: [".js"],
+		modules: [path.resolve(__dirname, 'src'), 'node_modules']
+  },
   output: {
     filename: 'bundle.[hash].js'
   },
@@ -32,6 +36,14 @@ module.exports = {
               sourceMap: true
             }
           }
+        ]
+      },
+      {
+      test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+        use: [
+          {
+            loader: 'url-loader'
+          },
         ]
       }
     ]

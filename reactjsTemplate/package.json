@@ -14,10 +14,12 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-hot-loader": "^4.3.1",
+    "react-native": "^0.55.4",
     "react-prop-types": "^0.4.0",
     "react-router-dom": "^4.3.1",
     "request": "^2.87.0",
-    "semantic-ui-react": "^0.81.1"
+    "semantic-ui-react": "^0.81.1",
+    "url-loader": "^1.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
