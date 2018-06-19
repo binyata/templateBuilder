@@ -7,6 +7,7 @@ import LoginPage from './loginTemplate/LoginPage'
 import DataTable from './dataTableTemplate/DataTable'
 import SideBar from './sideBarTemplate/SideBar'
 import D3Template from './d3Template/D3Template'
+import CssFun from './cssExperimental/Cssfun'
 import NoMatch from './NoMatch'
 
 class Routes extends React.Component {
@@ -22,6 +23,7 @@ class Routes extends React.Component {
               <Route exact path="/data-table-template" component={DataTable} />
               <Route exact path="/side-bar-template" component={SideBar} />
               <Route exact path="/d3-template" component={D3Template} />
+              <Route exact path="/css-experimental" component={CssFun} />
               <Route component={NoMatch} />
             </Switch>
           </div>

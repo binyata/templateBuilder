@@ -13,6 +13,7 @@ const Home = () => {
         <li><Link to="/data-table-template">Data Table Example</Link></li>
         <li><Link to="/side-bar-template">Side Bar Navigation Example</Link></li>
         <li><Link to="/d3-template">D3js Example</Link></li>
+        <li><Link to="/css-experimental">Css Experimental</Link></li>
       </ul>
     </Layout>
   );
