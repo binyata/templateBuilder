@@ -9,6 +9,7 @@ button:disabled {
   border: solid;
   border-color: #61666A;
   border-width: thin;
+  font-family: 'Roboto', sans-serif;
 }
 
 .row {
@@ -26,6 +27,8 @@ button:disabled {
 .columnRight {
   float: right;
   padding: 5px;
+  font-size: 1.0em;
+  font-weight: bold;
 }
 
 .sideBarBack {
@@ -64,13 +67,6 @@ button:disabled {
   white-space: nowrap;
 }
 
-.leftSideInnerPanel {
-  float: left;
-}
-
-.rightSideInnerPanel {
-  float: right;
-}
 /* #495661 panel buttons background color */
 /* #F6F7F7 Text and plus button color */
 /* #5DA1C8 Export Button background color */
@@ -82,7 +78,6 @@ button:disabled {
   color: #FFFFFF;
   padding-top: 8%;
   padding-bottom: 8%;
-  padding-left: 8%;
   border: solid;
   border-color: #828282;
   border-width: thin;
@@ -95,13 +90,34 @@ button:disabled {
   border-color: #5DA1C8;
   border-width: thin;
   border-radius: 5px;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 25%;
-  padding-right: 25%;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 .panelPrimaryButton:hover:enabled {
   background-color: #4CAF50;
   color: #FFFFFF;
+}
+
+
+@media screen and (max-width:1000px) {
+  .sideBarBack {
+    background-color: #424856;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .sideBarBack {
+    background-color: #424856;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .sideBarBack {
+    background-color: #424856;
+    width: 120px;
+  }
 }

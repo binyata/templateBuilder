@@ -21,14 +21,16 @@ class Panel extends React.Component {
       </div>
         <button className={styles.panelButtonGeneral}>
           <div className={styles.innerPanel}>
-            <div className={styles.columnLeft}><img src={barGraphPic} height="50%" width="100%" /></div>
-            <div className={styles.columnRight}>Dashboard</div>
+            <div className={styles.columnLeft}>
+              <img src={barGraphPic} height="25px" width="25px" />
+              &nbsp; Dashboard
+            </div>
           </div>
         </button>
-        <div className={styles.panelGeneralInfo}>Filter</div>
+        <div className={styles.panelGeneralInfo}>&nbsp; &nbsp; Filter</div>
 
         <div className={styles.panelGeneralInfo}>
-          <button type="button" className={styles.panelPrimaryButton} disabled>Apply Filters</button>
+          <button type="button" className={styles.panelPrimaryButton} disabled>APPLY</button>
         </div>
 
         <button className={styles.panelButtonGeneral}>
@@ -81,41 +83,5 @@ class Panel extends React.Component {
     )
   }
 }
-
-// <Layout>
-//   <h1>Css Experimental</h1>
-//   <div className={styles.row}>
-//     <div className={styles.column}>
-//       <img src={TestImg} width="100%"/>
-//     </div>
-//     <div className={styles.column}>
-//       <img src={TestImg} width="100%"/>
-//     </div>
-//   </div>
-// </Layout>
-// .column {
-//   float: left;
-//   width: 33.33%;
-//   padding: 5px;
-// }
-//
-// .row {
-//   content: "";
-//   clear: both;
-//   display: table;
-// }
-
-
-// <div className={styles.panelGeneralInfo}>Filter</div>
-// <button className={styles.panelButtonGeneral}>
-//   <div>
-//     Panel 1
-//   </div>
-// </button>
-// <button className={styles.panelButtonGeneral}>
-//   <div>
-//     Panel 2
-//   </div>
-// </button>
 
 export default Panel
